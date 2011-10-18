@@ -1,0 +1,20 @@
+{
+  "name": "dhoppe-resolv",
+  "author": "Dennis Hoppe",
+  "description": "Resolv Module for Debian, Ubuntu",
+  "license": "GPLv2",
+  "project_page": "http://github.com/dhoppe/puppet-resolv",
+  "source": "git://github.com/dhoppe/puppet-resolv",
+  "summary": "Resolv Module",
+  "version": "0.0.1",
+  "checksums": {
+    "Modulefile": "6d6a4190b2332692e2b2941879407faa",
+    "README": "000aabef1ff7d364c71b546e94c83d30",
+    "manifests/init.pp": "8c78cca72e279f8f88f5dfd4f8b7f7af",
+    "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
+    "spec/spec_helper.rb": "ca19ec4f451ebc7fdb035b52eae6e909",
+    "templates/common/etc/resolv.conf.erb": "e9989bd7245f8e5974d4b8c84e6fa992",
+    "tests/init.pp": "27ade767622545d4aaeb79fddcc388bb"
+  },
+  "dependencies": []
+}

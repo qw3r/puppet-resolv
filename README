@@ -1,0 +1,28 @@
+# Class: resolv
+#   This module manages resolv
+#
+# Definition:
+#   resolv::domain
+#
+# Parameters:
+#   $server - specify nameserver, default is 8.8.8.8 (Google)
+#   $domain - specify domain, default is $domain (Facter)
+#
+# Actions:
+#   Installs the resolv.conf
+#
+# Requires:
+#   Square Brackets, otherwise the conditionals at the
+#   template will throw an error
+#
+# Sample Usage:
+#   resolv::domain { "/etc/resolv.conf":
+#      server => [
+#         "192.168.122.2",
+#         "192.168.122.3"
+#      ],
+#      domain   => [
+#         "debian-solutions.dmz",
+#         "debian-solutions.de"
+#      ],
+#   }

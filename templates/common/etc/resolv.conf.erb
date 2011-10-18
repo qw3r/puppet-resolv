@@ -1,0 +1,13 @@
+#
+# THIS FILE IS MANAGED BY PUPPET
+# <%= file %>
+#
+
+<% t_servers.each do |t_server| -%>
+nameserver	<%= t_server %>
+<% end -%>
+domain		<%= t_domains[0] %>
+search		<%= t_domains.join(" ") %>
+<% if t_servers.length > 1 -%>
+options		timeout:1 attempts:1 rotate
+<% end -%>
