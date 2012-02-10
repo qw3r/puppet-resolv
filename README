@@ -17,12 +17,6 @@
 #
 # Sample Usage:
 #   resolv::domain { "/etc/resolv.conf":
-#      server => [
-#         "192.168.122.2",
-#         "192.168.122.3"
-#      ],
-#      domain   => [
-#         "debian-solutions.dmz",
-#         "debian-solutions.de"
-#      ],
+#      server => hiera_array('server'),
+#      domain => hiera_array('domain'),
 #   }

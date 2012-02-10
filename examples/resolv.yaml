@@ -1,0 +1,7 @@
+---
+domain:
+   - 'debian-solutions.dmz'
+   - 'debian-solutions.de'
+server:
+   - '192.168.122.2'
+   - '192.168.122.3'

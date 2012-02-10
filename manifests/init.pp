@@ -19,12 +19,8 @@ class resolv {
 	}
 
 	resolv::domain { "/etc/resolv.conf":
-		server => [
-			"192.168.122.1"
-		],
-		domain   => [
-			"debian-solutions.de"
-		],
+		server => hiera_array('server'),
+		domain => hiera_array('domain'),
 	}
 }
 
