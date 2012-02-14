@@ -14,7 +14,7 @@ class resolv {
 			owner   => root,
 			group   => root,
 			mode    => 0644,
-			content => template("resolv/common/etc/resolv.conf.erb"),
+			content => template("resolv/etc/resolv.conf.erb"),
 		}
 	}
 
